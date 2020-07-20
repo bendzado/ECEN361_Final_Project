@@ -1,0 +1,9 @@
+[Unit]
+Description=Blue Client
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/client/client.py
+
+[Install]
+WantedBy=network.target
